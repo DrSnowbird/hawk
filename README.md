@@ -14,9 +14,26 @@ will return a UUID.
 
 ``curl http://localhost:8080/status?UUID=00000000-0000-0000-0000-000000000001`` gives you status updates
 
-Building HAWK
+Building and Run HAWK
 ===
 ```
 mvn clean package -DskipTests
 java -jar target/hawk-0.1.0.jar
+
 ```
+Or, execute the script below to build and run:
+```
+./build-run-HAWK.sh
+```
+
+Test HAWK 
+====
+Execute the script to Test against HAWK REST Service:
+```
+./test-HAWK.sh
+```
+
+More Reference
+===
+Supplementary material concerning the evaluation and implementation of HAWK can be found here
+http://aksw.org/Projects/HAWK.html
